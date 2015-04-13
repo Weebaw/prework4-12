@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Precourse</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script>
+  window.onload = function() {
+
+    alert( "welcome" );
+
+  };
+
+
+  $(document).ready(function(){
+
+    $( "a" ).click(function( event ) {
+
+      alert( "Thanks for visiting!" );
+      
+    });
+
+
+    $("btn").click(function(){
+      $(this).hide();
+    });
+  });
+  </script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
